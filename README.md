@@ -50,7 +50,7 @@ conda env create -f environment.yml
 7. **Launch** the [Jupyter Notebook](http://jupyter.org/install.html):
 
 ```bash
-$ jupyter notebook
+$ jupyter-notebook
 ```
 ## Jupyter-Notebook-Practice-Physical-Constants-Ratios
 
