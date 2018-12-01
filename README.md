@@ -2,7 +2,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/master)
 
-[![nbviewer]https://nbviewer.ipython.org/urls/raw.github.com/laguer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/master/Jupyter-Notebook-Practice-Physical-Constants-Ratios.ipynb
+[nbviewer](https://nbviewer.ipython.org/github/laguer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/blob/master/Jupyter-Notebook%20Practice%20Physical%20Constants%20Ratios.ipynb)
 
 This repository contains the Jupyter notebooks of the intriguing physical constants ratios that are at play in micro-physics and cosmology of [*Jupyter-Notebook-Practice-Physical-Constants-Ratios(2018)*](https://www.packtpub.com/big-data-and-business-intelligence/-first-e/ https://zenodo.org/badge/latestdoi/158677063), by LaGuer/F.M.Sanchez/D.G, *Packt Publishing*.
 
