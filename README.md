@@ -1,10 +1,8 @@
 # Code of the Jupyter-Notebook-Practice-Physical-Constants-Ratios (2018)
 
- [![Build Status](https://travis-ci.org/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios
-.svg?branch=master)](https://travis-ci.org/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios) 
+[![Build Status](https://travis-ci.org/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios.svg?branch=master)](https://travis-ci.org/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios) 
  
- [![codecov](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios
-/branch/master/graph/badge.svg)](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios) 
+[![codecov](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/branch/master/graph/badge.svg)](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/master)
 
