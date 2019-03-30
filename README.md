@@ -1,12 +1,10 @@
 # Code of the Jupyter-Notebook-Practice-Physical-Constants-Ratios (2018)
 
  [![Build Status](https://travis-ci.org/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios
-.svg?branch=master)](https://travis-ci.org/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios
-) 
+.svg?branch=master)](https://travis-ci.org/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios) 
  
  [![codecov](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios
-/branch/master/graph/badge.svg)](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios
-) 
+/branch/master/graph/badge.svg)](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios) 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/master)
 
@@ -88,13 +86,14 @@ Please, cite this paper (http://vixra.org/pdf/1811.0146v8.pdf) if you employ thi
 
 Other related publications are available :
 
-=> [http://vixra.org/author/christian_bizouard](http://vixra.org/author/christian_bizouard)
-=> [Christian-Bizouard-Geophysical-modelling-of-the-polar-motion](https://www.amazon.com/Geophysical-Modelling-Gruyter-Studies-Mathematical-ebook/dp/B01N0DUB76)
-=> [http://rxiv.org/author/m_grosmann](http://rxiv.org/author/m_grosmann)
-=> [http://vixra.org/author/valery_a_kotov](http://vixra.org/author/valery_a_kotov)
-=> [http://rxiv.org/author/v_a_kotov](http://rxiv.org/author/v_a_kotov)
-=> [Rxiv Publications by f_m_sanchez](http://rxiv.org/author/f_m_sanchez)
-=> [Vixra Publications by francis_m_sanchez](http://vixra.org/author/francis_m_sanchez)
-=> [https://vixra.org/author/renee_veysseyre](https://vixra.org/author/renee_veysseyre)
-=> [Books of Renée Veysseyre : bibliographie - Dunod](https://www.dunod.com/livres-renee-veysseyre)
-=> [http://vixra.org/author/dominique_weigel](http://vixra.org/author/dominique_weigel)
+* [http://vixra.org/author/christian_bizouard](http://vixra.org/author/christian_bizouard)
+* [Christian-Bizouard-Geophysical-modelling-of-the-polar-motion](https://www.amazon.com/Geophysical-Modelling-Gruyter-Studies-Mathematical-ebook/dp/B01N0DUB76)
+* [Christian-Bizouard co-authored Lunar influence on equatorial atmospheric angular momentum](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2014JD022240)
+* [http://rxiv.org/author/m_grosmann](http://rxiv.org/author/m_grosmann)
+* [http://vixra.org/author/valery_a_kotov](http://vixra.org/author/valery_a_kotov)
+* [http://rxiv.org/author/v_a_kotov](http://rxiv.org/author/v_a_kotov)
+* [Rxiv Publications by f_m_sanchez](http://rxiv.org/author/f_m_sanchez)
+* [Vixra Publications by francis_m_sanchez](http://vixra.org/author/francis_m_sanchez)
+* [https://vixra.org/author/renee_veysseyre](https://vixra.org/author/renee_veysseyre)
+* [Books of Renée Veysseyre : bibliographie - Dunod](https://www.dunod.com/livres-renee-veysseyre)
+* [http://vixra.org/author/dominique_weigel](http://vixra.org/author/dominique_weigel)
