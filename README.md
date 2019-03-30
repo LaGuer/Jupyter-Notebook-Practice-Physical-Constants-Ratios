@@ -1,12 +1,20 @@
 # Code of the Jupyter-Notebook-Practice-Physical-Constants-Ratios (2018)
 
+ [![Build Status](https://travis-ci.org/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios
+.svg?branch=master)](https://travis-ci.org/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios
+) 
+ 
+ [![codecov](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios
+/branch/master/graph/badge.svg)](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios
+) 
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/master)
 
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/laguer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/blob/master/Jupyter-Notebook%20Practice%20Physical%20Constants%20Ratios.ipynb)
 
 [![nbviewer](https://img.shields.io/badge/view%20on-nbviewer-brightgreen.svg)](https://nbviewer.jupyter.org/github/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/blob/master/Jupyter-Notebook%20Practice%20Physical%20Constants%20Ratios.ipynb)
 
-This repository contains the Jupyter notebooks of the intriguing physical constants ratios that are at play in micro-physics and cosmology of [*Jupyter-Notebook-Practice-Physical-Constants-Ratios(2018)*](https://www.packtpub.com/big-data-and-business-intelligence/-first-e/ https://zenodo.org/badge/latestdoi/158677063), by LaGuer/F.M.Sanchez/D.G, *Packt Publishing*.
+This repository contains the Jupyter notebooks of the intriguing physical constants ratios that are at play in micro-physics and cosmology cite [*http://vixra.org/pdf/1811.0146v8.pdf*](http://vixra.org/pdf/1811.0146v8.pdf) if you use this [*Jupyter-Notebook-Practice-Physical-Constants-Ratios(2018)*](https://www.packtpub.com/big-data-and-business-intelligence/-first-e/ https://zenodo.org/badge/latestdoi/158677063) notebook co-authored by Dr. Christian Bizouard, Nicolas Flawisky, Prof. Michel Grosmann,  Valery Kotov, Prof. Francis Sanchez, Dr. Renee Veysseyres, Dr. Dominique Weigel, L.Gueroult & D.Gayral.
 
 This repository is read-only: the source files are on the [Jupyter-Notebook-Practice-Physical-Constants-Ratios](https://github.com/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios) repository.
 
@@ -76,5 +84,17 @@ The 'Jupyter-Notebook-Practice-Physical-Constants-Ratios' package is licensed un
 * Dr Francis Michel Sanchez
 * Denis Gayral
 
-Please, cite the paper LaGuer 2018 (http://vixra.org/pdf/1811.0146v8.pdf) if you employ this package in your research work.
+Please, cite this paper (http://vixra.org/pdf/1811.0146v8.pdf) if you employ this package in your research work.
 
+Other related publications are available :
+
+=> [http://vixra.org/author/christian_bizouard](http://vixra.org/author/christian_bizouard)
+=> [Christian-Bizouard-Geophysical-modelling-of-the-polar-motion](https://www.amazon.com/Geophysical-Modelling-Gruyter-Studies-Mathematical-ebook/dp/B01N0DUB76)
+=> [http://rxiv.org/author/m_grosmann](http://rxiv.org/author/m_grosmann)
+=> [http://vixra.org/author/valery_a_kotov](http://vixra.org/author/valery_a_kotov)
+=> [http://rxiv.org/author/v_a_kotov](http://rxiv.org/author/v_a_kotov)
+=> [Rxiv Publications by f_m_sanchez](http://rxiv.org/author/f_m_sanchez)
+=> [Vixra Publications by francis_m_sanchez](http://vixra.org/author/francis_m_sanchez)
+=> [https://vixra.org/author/renee_veysseyre](https://vixra.org/author/renee_veysseyre)
+=> [Books of Renée Veysseyre : bibliographie - Dunod](https://www.dunod.com/livres-renee-veysseyre)
+=> [http://vixra.org/author/dominique_weigel](http://vixra.org/author/dominique_weigel)
