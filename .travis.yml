@@ -1,5 +1,5 @@
 # http://travis-ci.org/#!/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios
-dist: cosmic
+dist: xenial
 #sudo: required
 sudo: false
 language: python
@@ -35,17 +35,6 @@ env:
     - COVDIR=coverage
 
 group: edge
-
-matrix:
-  include:
-    - env: CFLAGS="-O2"
-      compiler: gcc
-
-branches:
-  only:
-    - master
-    - develop
-    - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
 
 before_install:
   - |
