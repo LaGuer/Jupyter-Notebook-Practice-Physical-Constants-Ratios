@@ -1,7 +1,7 @@
 # http://travis-ci.org/#!/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios
 language: python
 python:
-  - "3.7"
+  - "3.6"
 install:
   - sudo apt-get update
   # We do this conditionally because it saves us some downloading if the
