@@ -36,7 +36,7 @@ install:
   # Useful for debugging any issues with conda
   - conda info -a
 
-  - conda env create -n test-environment python=$TOXENV -f environment.yml
+  - conda env create -n test-environment python=$PPCRENV -f environment.yml
   - source activate test-environment
 
 script:
