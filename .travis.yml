@@ -15,8 +15,9 @@ matrix:
       before_install: choco install python
       env: PATH=/c/Python37:/c/Python37/Scripts:$PATH
 
-install: pip3 install --upgrade pip  # all three OSes agree about 'pip3'
-install:	pip install pytest
+install: 
+  - pip3 install --upgrade pip  # all three OSes agree about 'pip3'
+  - pip install pytest
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
       wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh;
     else
