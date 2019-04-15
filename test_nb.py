@@ -32,7 +32,7 @@ def _notebook_run(path):
     return nb, errors
 
 def run_tests():
-    doctest.testmod(utils.riemann_tools)
+    doctest.testmod()
 
     # notebooks to ignore in tests:
     ignore_notebooks = ['at.ipynb']
