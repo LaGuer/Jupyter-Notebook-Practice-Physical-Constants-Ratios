@@ -4,7 +4,7 @@ import tempfile
 import sys
 import nbformat
 import doctest
-import utils
+#import utils
 
 if sys.version_info >= (3,0):
     kernel = 'python3'
@@ -32,7 +32,7 @@ def _notebook_run(path):
     return nb, errors
 
 def run_tests():
-    doctest.testmod()
+#    doctest.testmod()
 
     # notebooks to ignore in tests:
     ignore_notebooks = ['at.ipynb']
