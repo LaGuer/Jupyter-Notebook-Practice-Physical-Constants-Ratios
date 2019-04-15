@@ -33,9 +33,10 @@ install:
 
   - conda env create -n test-environment python=$TRAVIS_PYTHON_VERSION -f environment.yml
   - source activate test-environment
-install: 
+
 #  - pip install -U pip setuptools # Travis breaks without this
 #  - pip install -r requirements.txt
+  - sudo find / -name "jupyter" -print
   - jupyter nbextension enable --py widgetsnbextension
   
   
