@@ -1,44 +1,49 @@
 import os
 import subprocess
 import tempfile
+import sys
+import nbformat
+import doctest
+import utils
 
+if sys.version_info >= (3,0):
+    kernel = 'python3'
+else:
+    kernel = 'python2'
 
-def _exec_notebook(path):
+def _notebook_run(path):
+    """Execute a notebook via nbconvert and collect output.
+       :returns (parsed nb object, execution errors)
+    """
     with tempfile.NamedTemporaryFile(suffix=".ipynb") as fout:
         args = ["jupyter", "nbconvert", "--to", "notebook", "--execute",
-                "--ExecutePreprocessor.timeout=1000",
+                "--ExecutePreprocessor.timeout=60",
+                "--ExecutePreprocessor.kernel_name="+kernel,
                 "--output", fout.name, path]
         subprocess.check_call(args)
 
+        fout.seek(0)
+        nb = nbformat.reads(fout.read().decode('utf-8'), nbformat.current_nbformat)
 
-def get_temp_file_name():
-    ftemp = tempfile.NamedTemporaryFile(suffix=".ipynb")
-    temp_file_name = os.path.join(os.getcwd(), os.path.split(ftemp.name)[-1])
-    ftemp.close()
-    return temp_file_name
+    errors = [output for cell in nb.cells if "outputs" in cell
+              for output in cell["outputs"]
+              if output.output_type == "error"]
 
+    return nb, errors
 
-def _exec_notebook_win(path):
-    temp_file_name = get_temp_file_name()
+def run_tests():
+    doctest.testmod(utils.riemann_tools)
 
-    args = ["jupyter", "nbconvert", "--to", "notebook", "--execute",
-            "--ExecutePreprocessor.timeout=1000",
-            "--ExecutePreprocessor.kernel_name=python",
-            "--output", temp_file_name, path]
+    # notebooks to ignore in tests:
+    ignore_notebooks = ['at.ipynb']
 
-    try:
-        subprocess.check_call(args)
-    except BaseException as e:
-        if os.path.exists(temp_file_name):
-            os.remove(temp_file_name)
-        raise e
-
-    if os.path.exists(temp_file_name):
-        os.remove(temp_file_name)
+    for filename in os.listdir('.'):
+        if (filename.split('.')[-1] == 'ipynb' and 
+                    filename not in ignore_notebooks):
+            nb, errors = _notebook_run(filename)
+            if errors != []:
+                raise(Exception)
 
 
-def test():
-    if 'nt' == os.name:
-        _exec_notebook_win('test.ipynb')
-    else:
-        _exec_notebook('test.ipynb')
+if __name__ == '__main__':
+    run_tests()
