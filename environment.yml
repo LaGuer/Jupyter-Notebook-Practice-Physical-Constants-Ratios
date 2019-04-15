@@ -3,5 +3,6 @@ dependencies:
   - numpy
   - pip
   - pytest
+  - ipywidgets >= 6.0.0
   - pip:
       - julia
