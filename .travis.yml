@@ -21,7 +21,9 @@ install:
   - pip install pytest
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
       wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh;
-  - fi
+    else
+      start /wait "" Miniconda3-latest-Windows-x86_64.exe /RegisterPython=0 /S /D=%UserProfile%\Miniconda3
+    fi
   - if [[ "sw_vers -productVersion" == "10.14.3" ]]; then
       curl https://repo.continuum.io/archive/Anaconda3-5.2.0-MacOSX-x86_64.sh -o anaconda3.sh
     else
