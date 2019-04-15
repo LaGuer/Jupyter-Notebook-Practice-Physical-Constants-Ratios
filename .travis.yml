@@ -20,5 +20,5 @@ install:	pip install pytest
 # 'python3' is a 'command not found' error on Windows but 'py' works on Windows only
 #script: python3 my_app.py || python my_app.py
 script:
-  - python pytest  || python test.py || python py.test
-  - python3 pytest  || python3 test.py || python3 py.test
+  - python test_nb.py  || python test_nb.py || python test_nb.py
+  - python3 test_nb.py  || python3 test_nb.py || python3 test_nb.py
