@@ -28,6 +28,8 @@ before_install:
       source ~/travis-env/bin/activate
     fi
   - python --version
+  - wget https://repo.continuum.io/miniconda/Anaconda3-5.2.0-MacOSX-x86_64.sh -O miniconda.sh
+  - sudo find / -name "*conda.sh" -print
 #  - conda info -a
   
 
@@ -43,6 +45,8 @@ before_install:
       source ~/travis-env/bin/activate
     fi
   - python --version
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+  - sudo find / -name "*conda.sh" -print
 #  - conda info -a
   
 
