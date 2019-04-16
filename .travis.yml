@@ -93,7 +93,8 @@ install:
 #  - conda update -q conda
 
 #  - conda env create -n test-environment python=$TRAVIS_PYTHON_VERSION -f environment.yml
-  - source activate test-environment
+#  - source activate test-environment
+  - conda info --envs
 
 #  - pip install -U pip setuptools # Travis breaks without this
 #  - pip install -r requirements.txt
