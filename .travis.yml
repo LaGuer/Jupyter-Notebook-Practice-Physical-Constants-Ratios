@@ -12,7 +12,10 @@ matrix:
     - name: "Python 3.7.3 on Windows"
       os: windows           # Windows 10.0.17134 N/A Build 17134
       language: shell       # 'language: python' is an error on Travis CI Windows
-      before_install: choco install python
+      before_install: choco install python ; wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
+  #      - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
+  #      - start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S /D=%HOME%\Miniconda3
+
       env: PATH=/c/Python37:/c/Python37/Scripts:$PATH
       
 before_install:
@@ -22,7 +25,7 @@ before_install:
     if [[ "$TRAVIS_OS_NAME" == "osx" && "$TRAVIS_PYTHON_VERSION" == "2.7"]]; then
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
-        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh;
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
         bash miniconda.sh -b -p $HOME/miniconda
       fi
       python3 -m pip install virtualenv
@@ -42,7 +45,7 @@ before_install:
     if [[  "$TRAVIS_OS_NAME" == "linux" && "$TRAVIS_PYTHON_VERSION" == "3.7"]]; then
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
-        wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh;
+        wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh
         bash miniconda.sh -b -p $HOME/miniconda
       fi
       python3 -m pip install virtualenv
@@ -52,7 +55,7 @@ before_install:
   - python --version
   - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
   - ls ; pwd
-  - bash miniconda.sh -b -p $HOME/miniconda -f
+  - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - ls; pwd
 #  - sudo find / -name "*conda.sh" -print
 #  - conda info -a
