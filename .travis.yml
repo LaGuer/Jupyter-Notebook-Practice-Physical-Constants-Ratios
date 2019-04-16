@@ -26,7 +26,6 @@ before_install:
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
         wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
-        bash miniconda.sh -b -p $HOME/miniconda
       fi
       python3 -m pip install virtualenv
       python3 -m virtualenv -p $(which python$TRAVIS_PYTHON_VERSION) ~/travis-env
@@ -35,18 +34,17 @@ before_install:
   - python --version
   - ls; pwd
 #  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
-#  - bash miniconda.sh -b -p $HOME/miniconda -f -u
+  - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - ls; pwd
 #  - sudo find / -name "*conda.sh" -print
   - conda info -a
 
   - |
     
-    if [[ "$TRAVIS_OS_NAME" == "linux" ]] && [[ "$TRAVIS_PYTHON_VERSION" == "3.7" ]]; then
+    if [[ "$TRAVIS_OS_NAME" == "linux" ]] && [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
         wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh
-        bash miniconda.sh -b -p $HOME/miniconda
       fi
       python3 -m pip install virtualenv
       python3 -m virtualenv -p $(which python$TRAVIS_PYTHON_VERSION) ~/travis-env
@@ -55,7 +53,7 @@ before_install:
   - python --version
 #  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
 #  - ls ; pwd
-#  - bash miniconda.sh -b -p $HOME/miniconda -f -u
+  - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - ls; pwd
 #  - sudo find / -name "*conda.sh" -print
   - conda info -a
@@ -67,7 +65,7 @@ before_install:
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
         wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
-        start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S
+        start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S /D=%UserProfile%\Miniconda3
       fi
       python3 -m pip install virtualenv
       python3 -m virtualenv -p $(which python$TRAVIS_PYTHON_VERSION) ~/travis-env
@@ -86,7 +84,7 @@ install:
 #  - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - export PATH="$HOME/miniconda/bin:$PATH"
   - hash -r
-  - start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S
+  - start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S /D=%UserProfile%\Miniconda3
   - conda config --set always_yes yes --set changeps1 no
   - conda update -q conda
   # Useful for debugging any issues with conda
