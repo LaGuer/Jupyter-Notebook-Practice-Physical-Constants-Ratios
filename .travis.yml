@@ -13,8 +13,8 @@ matrix:
       os: windows           # Windows 10.0.17134 N/A Build 17134
       language: shell       # 'language: python' is an error on Travis CI Windows
       before_install: choco install python ;  choco install miniconda3
-  #      - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
-  #      - start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S /D=%HOME%\Miniconda3
+#      - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
+#      - start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S /D=%HOME%\Miniconda3
 
       env: PATH=/c/Python37:/c/Python37/Scripts:$PATH
       
@@ -89,7 +89,7 @@ install:
 #  - start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S /D=%UserProfile%\Miniconda3
 #  - conda config --set always_yes yes --set changeps1 no
   - conda update -q conda
-  # Useful for debugging any issues with conda
+# Useful for debugging any issues with conda
   - conda info -a
 
   - conda env create -n test-environment python=$TRAVIS_PYTHON_VERSION -f environment.yml
