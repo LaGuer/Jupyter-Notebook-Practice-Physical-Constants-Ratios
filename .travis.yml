@@ -19,10 +19,10 @@ before_install:
   
   - |
     # install Python on macOS
-    if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+    if [[ "$TRAVIS_OS_NAME" == "osx" && "$TRAVIS_PYTHON_VERSION" == "2.7"]]; then
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
-        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh;
         bash miniconda.sh -b -p $HOME/miniconda
       fi
       python3 -m pip install virtualenv
@@ -31,7 +31,7 @@ before_install:
     fi
   - python --version
   - ls; pwd
-  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh -O miniconda.sh
+  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
   - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - ls; pwd
 #  - sudo find / -name "*conda.sh" -print
@@ -39,7 +39,7 @@ before_install:
 
   - |
     # install miniconda on Linux
-    if [[  "$TRAVIS_OS_NAME" == "linux" ]]; then
+    if [[  "$TRAVIS_OS_NAME" == "linux" && "$TRAVIS_PYTHON_VERSION" == "3.7"]]; then
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
         wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh;
@@ -60,7 +60,7 @@ before_install:
 
   - |
     # install miniconda on Windows
-    if [[  "$TRAVIS_OS_NAME" == "windows" ]]; then
+    if [[  "$TRAVIS_OS_NAME" == "windows" && "$TRAVIS_PYTHON_VERSION" == "3.7"]]; then
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
         wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
