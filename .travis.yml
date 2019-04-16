@@ -31,7 +31,7 @@ before_install:
   - python --version
   - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
   - ls ; pwd
-  - bash miniconda.sh -b -p $HOME/miniconda
+  - bash miniconda.sh -b -p $HOME/miniconda -f
   - ls; pwd
 #  - sudo find / -name "*conda.sh" -print
   
