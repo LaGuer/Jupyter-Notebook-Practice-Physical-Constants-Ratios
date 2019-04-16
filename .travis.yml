@@ -29,7 +29,7 @@ before_install:
       source ~/travis-env/bin/activate
     fi
   - python --version
-  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh && https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
   - bash miniconda.sh -b -p $HOME/miniconda
   - sudo find / -name "*conda.sh" -print
   
@@ -38,7 +38,7 @@ before_install:
     if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
-        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+        wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
         bash miniconda.sh -b -p $HOME/miniconda
       fi
       python3 -m pip install virtualenv
@@ -48,7 +48,7 @@ before_install:
   - python --version
   - ls
   - pwd
-  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh -O miniconda.sh
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh -O miniconda.sh
   - bash miniconda.sh -b -p $HOME/miniconda
   - sudo find / -name "*conda.sh" -print
 #  - conda info -a
