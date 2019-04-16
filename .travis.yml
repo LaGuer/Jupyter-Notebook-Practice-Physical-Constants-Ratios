@@ -16,6 +16,27 @@ matrix:
       env: PATH=/c/Python37:/c/Python37/Scripts:$PATH
       
 before_install:
+  
+  - |
+    # install Python on macOS
+    if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+      env | sort
+      if ! which python$TRAVIS_PYTHON_VERSION; then
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
+        bash miniconda.sh -b -p $HOME/miniconda
+      fi
+      python3 -m pip install virtualenv
+      python3 -m virtualenv -p $(which python$TRAVIS_PYTHON_VERSION) ~/travis-env
+      source ~/travis-env/bin/activate
+    fi
+  - python --version
+  - ls; pwd
+  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh -O miniconda.sh
+  - bash miniconda.sh -b -p $HOME/miniconda -f -u
+  - ls; pwd
+#  - sudo find / -name "*conda.sh" -print
+#  - conda info -a
+
   - |
     # install miniconda on Linux
     if [[  "$TRAVIS_OS_NAME" == "linux" ]]; then
@@ -34,26 +55,6 @@ before_install:
   - bash miniconda.sh -b -p $HOME/miniconda -f
   - ls; pwd
 #  - sudo find / -name "*conda.sh" -print
-  
-  - |
-    # install Python on macOS
-    if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
-      env | sort
-      if ! which python$TRAVIS_PYTHON_VERSION; then
-        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
-        bash miniconda.sh -b -p $HOME/miniconda
-      fi
-      python3 -m pip install virtualenv
-      python3 -m virtualenv -p $(which python$TRAVIS_PYTHON_VERSION) ~/travis-env
-      source ~/travis-env/bin/activate
-    fi
-  - python --version
-  - ls; pwd
-  - pwd
-  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh -O miniconda.sh
-  - bash miniconda.sh -b -p $HOME/miniconda -f -u
-#  - sudo find / -name "*conda.sh" -print
-#  - conda info -a
 #  - conda info -a
   
 
@@ -79,7 +80,7 @@ install:
   - pip install utils
   - pip install pytest
   - python --version
-  - bash miniconda.sh -b -p $HOME/miniconda -f -u
+#  - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - export PATH="$HOME/miniconda/bin:$PATH"
   - hash -r
   - conda config --set always_yes yes --set changeps1 no
