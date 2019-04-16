@@ -19,7 +19,7 @@ before_install:
   
   - |
     
-    if [[ "$TRAVIS_OS_NAME" == "osx" ]] && [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
+    if [[ "$TRAVIS_OS_NAME" == "osx" ]] && [[ "$TRAVIS_PYTHON_VERSION" == "3.7" ]]; then
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
         wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
@@ -33,12 +33,12 @@ before_install:
   - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
   - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - ls; pwd
-  - sudo find / -name "conda" -print
-  - conda info -a
+#  - sudo find / -name "conda" -print
+  - $HOME/miniconda/bin/conda info -a
 
   - |
     
-    if [[ "$TRAVIS_OS_NAME" == "xenial" ]] && [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
+    if [[ "$TRAVIS_OS_NAME" == "Ubuntu" ]] && [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
         wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh
@@ -52,8 +52,8 @@ before_install:
   - ls ; pwd
   - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - ls; pwd
-  - sudo find / -name "conda" -print
-  - conda info -a
+#  - sudo find / -name "conda" -print
+  - $HOME/miniconda/bin/conda info -a
   
 
   - |
@@ -83,9 +83,9 @@ install:
 
 #  - start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S /D=%UserProfile%\Miniconda3
 #  - conda config --set always_yes yes --set changeps1 no
-  - conda update -q conda
+  - $HOME/miniconda/bin/conda update -q conda
 # Useful for debugging any issues with conda
-  - conda info -a
+  - $HOME/miniconda/bin/conda info -a
 
   - conda env create -n test-environment python=$TRAVIS_PYTHON_VERSION -f environment.yml
   - source activate test-environment
