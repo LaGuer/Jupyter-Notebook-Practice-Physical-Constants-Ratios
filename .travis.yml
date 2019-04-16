@@ -28,9 +28,9 @@ before_install:
       source ~/travis-env/bin/activate
     fi
   - python --version
-  - conda info -a
+#  - conda info -a
   
-before_install:
+
   - |
     # install miniconda on Linux
     if [[  "$TRAVIS_OS_NAME" == "linux" ]]; then
@@ -43,9 +43,9 @@ before_install:
       source ~/travis-env/bin/activate
     fi
   - python --version
-  - conda info -a
+#  - conda info -a
   
-before_install:
+
   - |
     # install miniconda on Windows
     if [[  "$TRAVIS_OS_NAME" == "windows" ]]; then
@@ -58,7 +58,7 @@ before_install:
       source ~/travis-env/bin/activate
     fi
   - python --version
-  - conda info -a
+#  - conda info -a
 
 install: 
   - pip3 install --upgrade pip  # all three OSes agree about 'pip3'
