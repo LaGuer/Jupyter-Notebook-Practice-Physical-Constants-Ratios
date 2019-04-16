@@ -22,7 +22,7 @@ before_install:
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
         wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh;
-        bash ~/miniconda.sh -b -p $HOME/miniconda
+        bash miniconda.sh -b -p $HOME/miniconda
       fi
       python3 -m pip install virtualenv
       python3 -m virtualenv -p $(which python$TRAVIS_PYTHON_VERSION) ~/travis-env
