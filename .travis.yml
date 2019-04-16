@@ -17,36 +17,37 @@ matrix:
       
 before_install:
   - |
-    # install Python on macOS
-    if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
-      env | sort
-      if ! which python$TRAVIS_PYTHON_VERSION; then
-        wget https://repo.continuum.io/miniconda/Anaconda3-5.2.0-MacOSX-x86_64.sh -O miniconda.sh
-      fi
-      python3 -m pip install virtualenv
-      python3 -m virtualenv -p $(which python$TRAVIS_PYTHON_VERSION) ~/travis-env
-      source ~/travis-env/bin/activate
-    fi
-  - python --version
-  - wget https://repo.continuum.io/miniconda/Anaconda3-5.2.0-MacOSX-x86_64.sh -O miniconda.sh
-  - sudo find / -name "*conda.sh" -print
-#  - conda info -a
-  
-
-  - |
     # install miniconda on Linux
     if [[  "$TRAVIS_OS_NAME" == "linux" ]]; then
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
-        wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+        wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh;
+        bash ~/miniconda.sh -b -p $HOME/miniconda
       fi
       python3 -m pip install virtualenv
       python3 -m virtualenv -p $(which python$TRAVIS_PYTHON_VERSION) ~/travis-env
       source ~/travis-env/bin/activate
     fi
   - python --version
-  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+  - bash ~/miniconda.sh -b -p $HOME/miniconda
   - sudo find / -name "*conda.sh" -print
+  
+  - |
+    # install Python on macOS
+    if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+      env | sort
+      if ! which python$TRAVIS_PYTHON_VERSION; then
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+      fi
+      python3 -m pip install virtualenv
+      python3 -m virtualenv -p $(which python$TRAVIS_PYTHON_VERSION) ~/travis-env
+      source ~/travis-env/bin/activate
+    fi
+  - python --version
+  - wget https://repo.continuum.io/miniconda/Anaconda3-5.1.0-MacOSX-x86_64.sh -O miniconda.sh
+  - sudo find / -name "*conda.sh" -print
+#  - conda info -a
 #  - conda info -a
   
 
@@ -55,13 +56,15 @@ before_install:
     if [[  "$TRAVIS_OS_NAME" == "windows" ]]; then
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
-        start /wait "" Miniconda3-latest-Windows-x86_64.exe /RegisterPython=0 /S /D=%UserProfile%\Miniconda3
+        start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S /D=%HOME%\Miniconda3
       fi
       python3 -m pip install virtualenv
       python3 -m virtualenv -p $(which python$TRAVIS_PYTHON_VERSION) ~/travis-env
       source ~/travis-env/bin/activate
     fi
   - python --version
+  - pwd
+  - ls
 #  - conda info -a
 
 install: 
