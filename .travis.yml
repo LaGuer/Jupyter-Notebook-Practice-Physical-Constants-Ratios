@@ -94,7 +94,7 @@ install:
 
 #  - conda env create -n test-environment python=$TRAVIS_PYTHON_VERSION -f environment.yml
 #  - source activate test-environment
-  - conda info --envs
+#  - conda info --envs
 
 #  - pip install -U pip setuptools # Travis breaks without this
 #  - pip install -r requirements.txt
@@ -107,5 +107,6 @@ install:
 # 'python3' is a 'command not found' error on Windows but 'py' works on Windows only
 #script: python3 my_app.py || python my_app.py
 script:
+  - cd $HOME && ls
   - python test_nb.py  || python test_nb.py || python test_nb.py
   - python3 test_nb.py  || python3 test_nb.py || python3 test_nb.py
