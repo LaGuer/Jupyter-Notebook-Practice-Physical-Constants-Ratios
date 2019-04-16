@@ -34,11 +34,11 @@ before_install:
     fi
   - python --version
   - ls; pwd
-  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
-  - bash miniconda.sh -b -p $HOME/miniconda -f -u
+#  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
+#  - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - ls; pwd
 #  - sudo find / -name "*conda.sh" -print
-#  - conda info -a
+  - conda info -a
 
   - |
     
@@ -53,12 +53,12 @@ before_install:
       source ~/travis-env/bin/activate
     fi
   - python --version
-  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
-  - ls ; pwd
-  - bash miniconda.sh -b -p $HOME/miniconda -f -u
+#  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+#  - ls ; pwd
+#  - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - ls; pwd
 #  - sudo find / -name "*conda.sh" -print
-#  - conda info -a
+  - conda info -a
   
 
   - |
@@ -67,7 +67,7 @@ before_install:
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
         wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
-        start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S /D=%HOME%\Miniconda3
+        start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S
       fi
       python3 -m pip install virtualenv
       python3 -m virtualenv -p $(which python$TRAVIS_PYTHON_VERSION) ~/travis-env
@@ -86,7 +86,7 @@ install:
 #  - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - export PATH="$HOME/miniconda/bin:$PATH"
   - hash -r
-  - start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S /D=%HOME%\Miniconda3
+  - start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S
   - conda config --set always_yes yes --set changeps1 no
   - conda update -q conda
   # Useful for debugging any issues with conda
