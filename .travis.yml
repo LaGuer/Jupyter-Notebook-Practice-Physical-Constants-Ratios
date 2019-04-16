@@ -3,12 +3,15 @@ language: python            # this works for Linux but is an error on macOS or W
 matrix:
   include:
     - name: "Python 3.7.1 on Xenial Linux"
+      os: ubuntu
       python: 3.7           # this works for Linux but is ignored on macOS or Windows
       dist: xenial          # required for Python >= 3.7
+      before_install: wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh ; bash miniconda.sh -b -p $HOME/miniconda -f -u
     - name: "Python 3.7.2 on macOS"
       os: osx
       osx_image: xcode10.2  # Python 3.7.2 running on macOS 10.14.3
       language: shell       # 'language: python' is an error on Travis CI macOS
+      before_install: wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh ; bash miniconda.sh -b -p $HOME/miniconda -f -u
     - name: "Python 3.7.3 on Windows"
       os: windows           # Windows 10.0.17134 N/A Build 17134
       language: shell       # 'language: python' is an error on Travis CI Windows
@@ -19,7 +22,7 @@ before_install:
   
   - |
     
-    if [[ "$TRAVIS_OS_NAME" == "osx" ]] && [[ "$TRAVIS_PYTHON_VERSION" == "3.7" ]]; then
+    if [[ "$TRAVIS_OS_NAME" == "osx" ]] && [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
       env | sort
       if ! which python$TRAVIS_PYTHON_VERSION; then
         wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
@@ -30,8 +33,8 @@ before_install:
     fi
   - python --version
   - ls; pwd
-  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
-  - bash miniconda.sh -b -p $HOME/miniconda -f -u
+#  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh
+#  - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - ls; pwd
 #  - sudo find / -name "conda" -print
   - $HOME/miniconda/bin/conda info -a
@@ -48,9 +51,9 @@ before_install:
       source ~/travis-env/bin/activate
     fi
   - python --version
-  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+#  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
   - ls ; pwd
-  - bash miniconda.sh -b -p $HOME/miniconda -f -u
+#  - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - ls; pwd
 #  - sudo find / -name "conda" -print
   - $HOME/miniconda/bin/conda info -a
@@ -83,11 +86,12 @@ install:
 
 #  - start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S /D=%UserProfile%\Miniconda3
 #  - conda config --set always_yes yes --set changeps1 no
-  - $HOME/miniconda/bin/conda update -q conda
+  - echo $HOME
+  - cd miniconda/bin/ && conda update -q conda
 # Useful for debugging any issues with conda
-  - $HOME/miniconda/bin/conda info -a
+  - ./conda info -a
 
-  - conda env create -n test-environment python=$TRAVIS_PYTHON_VERSION -f environment.yml
+#  - conda env create -n test-environment python=$TRAVIS_PYTHON_VERSION -f environment.yml
   - source activate test-environment
 
 #  - pip install -U pip setuptools # Travis breaks without this
