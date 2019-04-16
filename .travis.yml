@@ -98,8 +98,9 @@ install:
 
 #  - pip install -U pip setuptools # Travis breaks without this
 #  - pip install -r requirements.txt
-  - sudo find / -name "jupyter" -print
-#  - jupyter nbextension enable --py widgetsnbextension
+#  - sudo find / -name "jupyter" -print
+  - pip3 install jupyter
+  - jupyter nbextension enable --py widgetsnbextension
   
   
 
