@@ -2,7 +2,6 @@ import os
 import subprocess
 import tempfile
 import sys
-import nbformat
 import doctest
 
 
