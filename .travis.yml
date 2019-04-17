@@ -86,10 +86,11 @@ install:
 
 #  - start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=AllUsers /RegisterPython=1 /S /D=%UserProfile%\Miniconda3
 #  - conda config --set always_yes yes --set changeps1 no
-  - echo $HOME/miniconda/bin
-  - cd $HOME/miniconda/bin/ &&  ls
+  - echo $HOME/miniconda/bin 
+#  - cd $HOME/miniconda/bin
+  - ls $HOME/miniconda/bin
 # Useful for debugging any issues with conda
-  - conda info -a
+  - $HOME/miniconda/bin/conda info -a
 #  - conda update -q conda
 
 #  - conda env create -n test-environment python=$TRAVIS_PYTHON_VERSION -f environment.yml
