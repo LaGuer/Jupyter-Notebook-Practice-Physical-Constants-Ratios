@@ -100,6 +100,7 @@ install:
 #  - pip install -r requirements.txt
 #  - sudo find / -name "jupyter" -print
   - pip3 install jupyter
+  - pip3 install nbformat
   - jupyter nbextension enable --py widgetsnbextension
   
   
