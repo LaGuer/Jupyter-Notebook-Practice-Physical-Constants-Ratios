@@ -109,6 +109,7 @@ install:
 #script: python3 my_app.py || python my_app.py
 script:
   - cd $HOME && ls
-  - pwd && cd ~
+  - pwd && cd ~/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios
+  - ls
   - python test_nb.py  || python test_nb.py || python test_nb.py
   - python3 test_nb.py  || python3 test_nb.py || python3 test_nb.py
