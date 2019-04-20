@@ -1,0 +1,10 @@
+cff-version: 1.0.3
+message: If you use this software, please cite it as below.
+authors:
+  - family-names: Guer
+    given-names: La
+    orcid: https://orcid.org/0000-0001-9216-2143
+title: Jupyter-Notebook-Practice-Physical-Constants-Ratios
+version: v0.0.1b 
+doi: 10.5281/zenodo.1495229
+date-released: 2018-11-23
