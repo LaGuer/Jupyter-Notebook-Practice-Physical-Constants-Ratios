@@ -81,6 +81,7 @@ install:
   - pip3 install --upgrade pip  # all three OSes agree about 'pip3'
   - pip install utils
   - pip install pytest
+  - pip list
   - python --version
 #  - bash miniconda.sh -b -p $HOME/miniconda -f -u
   - export PATH="$HOME/miniconda/bin:$PATH"
@@ -93,7 +94,8 @@ install:
   - ls $HOME/
 # Useful for debugging any issues with conda
   - $HOME/miniconda/bin/conda info -a
-#  - conda update -q conda
+  - $HOME/miniconda/bin/conda list
+  #- $HOME/miniconda/bin/conda update -q conda
 
 #  - conda env create -n test-environment python=$TRAVIS_PYTHON_VERSION -f environment.yml
 #  - source activate test-environment
@@ -118,4 +120,4 @@ script:
   - python test_nb.py  || python test_nb.py || python test_nb.py
   - python3 test_nb.py  || python3 test_nb.py || python3 test_nb.py
 #  - pytest --nbval docs/00_explore-data.ipynb
-  - pytest --nbval test.ipynb
+#  - pytest --nbval test.ipynb
