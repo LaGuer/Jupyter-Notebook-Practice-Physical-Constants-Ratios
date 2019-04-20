@@ -21,9 +21,9 @@ install:
   - "%CMD_IN_ENV%  pip install nose coverage"
 #  - "%CMD_IN_ENV%  pip install .[test]"
   - "%CMD_IN_ENV%  pip install pytest"
-  - "%CMD_IN_ENV%  mkdir results"
-  - "%CMD_IN_ENV%  cd results"
-  - "%CMD_IN_ENV%  cd ~"
+#  - "%CMD_IN_ENV%  mkdir results"
+#  - "%CMD_IN_ENV%  cd results"
+#  - "%CMD_IN_ENV%  cd ~"
   - "%CMD_IN_ENV%  ls; pwd"
 test_script:
 #  - "%CMD_IN_ENV%  iptest --coverage xml"
