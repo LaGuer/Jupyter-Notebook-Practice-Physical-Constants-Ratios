@@ -4,7 +4,7 @@
  
 [![codecov](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/branch/master/graph/badge.svg)](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/master?urlpath=lab/tree/doc/Jupyter-Notebook%20Practice%20Physical%20Constants%20Ratios.ipynb) Jupyter Lab Access
 
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/laguer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/blob/master/Jupyter-Notebook%20Practice%20Physical%20Constants%20Ratios.ipynb)
 
