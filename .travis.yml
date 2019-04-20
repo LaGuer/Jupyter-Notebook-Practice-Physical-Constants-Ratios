@@ -117,4 +117,5 @@ script:
   - ls && pwd
   - python test_nb.py  || python test_nb.py || python test_nb.py
   - python3 test_nb.py  || python3 test_nb.py || python3 test_nb.py
+  - python3 numpy.__version__
   - pytest --nbval docs/00_explore-data.ipynb
