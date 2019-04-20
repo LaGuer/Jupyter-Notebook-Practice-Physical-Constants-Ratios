@@ -87,7 +87,7 @@ Other related publications are available :
 * [http://vixra.org/author/christian_bizouard](http://vixra.org/author/christian_bizouard)
 * [Christian-Bizouard-Geophysical-modelling-of-the-polar-motion](https://www.amazon.com/Geophysical-Modelling-Gruyter-Studies-Mathematical-ebook/dp/B01N0DUB76)
 * [Christian-Bizouard co-authored Lunar influence on equatorial atmospheric angular momentum](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2014JD022240)
-* [Emergence of a New Quantum Mechanics by Multivalued Logic, in The Physics of Reality: Space, Time, Matter, Cosmos : Proceedings of the 8th Symposium Honoring Mathematical Physicist Jean-Pierre Vigier, Covent Garden, London, UK, 15 -18 August 2012](https://www.worldscientific.com/doi/10.1142/9789814504782_0036)
+* [Nicolas Flawisky co-authored Emergence of a New Quantum Mechanics by Multivalued Logic, in The Physics of Reality: Space, Time, Matter, Cosmos : Proceedings of the 8th Symposium Honoring Mathematical Physicist Jean-Pierre Vigier, Covent Garden, London, UK, 15 -18 August 2012](https://www.worldscientific.com/doi/10.1142/9789814504782_0036)
 * [http://rxiv.org/author/m_grosmann](http://rxiv.org/author/m_grosmann)
 * [http://vixra.org/author/valery_a_kotov](http://vixra.org/author/valery_a_kotov)
 * [http://rxiv.org/author/v_a_kotov](http://rxiv.org/author/v_a_kotov)
