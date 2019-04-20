@@ -96,3 +96,4 @@ Other related publications are available :
 * [https://vixra.org/author/renee_veysseyre](https://vixra.org/author/renee_veysseyre)
 * [Books of Renée Veysseyre : bibliographie - Dunod](https://www.dunod.com/livres-renee-veysseyre)
 * [http://vixra.org/author/dominique_weigel](http://vixra.org/author/dominique_weigel)
+* [Prof. Peter M. Boone in SPIE Proceedings 1994](http://spie.org/Publications/Proceedings/Paper/10.1117/12.201880)
