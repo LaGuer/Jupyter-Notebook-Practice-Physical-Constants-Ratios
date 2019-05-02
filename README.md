@@ -1,5 +1,7 @@
 # Code of the Jupyter-Notebook-Practice-Physical-Constants-Ratios (2018)
 
+[![Cite rXiv](https://img.shields.io/badge/rXiv-1904.0218-orange.svg?style=flat)](https://rxiv.org/abs/1904.0218)
+
 [![Build Status](https://travis-ci.org/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios.svg?branch=master)](https://travis-ci.org/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios) 
  
 [![codecov](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/branch/master/graph/badge.svg)](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios)
@@ -72,6 +74,7 @@ Explore intriguing Physical Constants ratios between microphysics and cosmology
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/master)
 
+
 [![DOI](https://zenodo.org/badge/158677063.svg)](https://zenodo.org/badge/latestdoi/158677063)
 
 License
@@ -82,18 +85,21 @@ The 'Jupyter-Notebook-Practice-Physical-Constants-Ratios' package is licensed un
 
 Please, cite this paper (http://vixra.org/pdf/1811.0146v8.pdf) if you employ this package in your research work.
 
-Other related publications are available :
+## References & Books
 
-* [http://vixra.org/author/christian_bizouard](http://vixra.org/author/christian_bizouard)
+Other related publications are available from these references:
+
+* [http://vixra.org/author/christian_bizouard](http://vixra.org/author/christian_bizouard) from [OBSPM](https://en.wikipedia.org/wiki/Paris_Observatory)
 * [Christian-Bizouard-Geophysical-modelling-of-the-polar-motion](https://www.amazon.com/Geophysical-Modelling-Gruyter-Studies-Mathematical-ebook/dp/B01N0DUB76)
 * [Christian-Bizouard co-authored Lunar influence on equatorial atmospheric angular momentum](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2014JD022240)
 * [Nicolas Flawisky co-authored Emergence of a New Quantum Mechanics by Multivalued Logic, in The Physics of Reality: Space, Time, Matter, Cosmos : Proceedings of the 8th Symposium Honoring Mathematical Physicist Jean-Pierre Vigier, Covent Garden, London, UK, 15 -18 August 2012](https://www.worldscientific.com/doi/10.1142/9789814504782_0036)
 * [http://rxiv.org/author/m_grosmann](http://rxiv.org/author/m_grosmann)
-* [http://vixra.org/author/valery_a_kotov](http://vixra.org/author/valery_a_kotov)
+* [http://vixra.org/author/valery_A_kotov](http://vixra.org/author/valery_a_kotov) from [CrAO](https://en.wikipedia.org/wiki/Crimean_Astrophysical_Observatory)
 * [http://rxiv.org/author/v_a_kotov](http://rxiv.org/author/v_a_kotov)
-* [Rxiv Publications by f_m_sanchez](http://rxiv.org/author/f_m_sanchez)
+* [Rxiv Publications by f_m_sanchez](http://rxiv.org/author/f_m_sanchez) and in [ResearchGate] (https://www.researchgate.net/profile/Francis_Sanchez3)
 * [Vixra Publications by francis_m_sanchez](http://vixra.org/author/francis_m_sanchez)
-* [https://vixra.org/author/renee_veysseyre](https://vixra.org/author/renee_veysseyre)
+* [https://vixra.org/author/renee_veysseyre](https://vixra.org/author/renee_veysseyre) and [R.Veysseyre in ResearchGate (https://www.researchgate.net/scientific-contributions/35247649_R_Veysseyre)
 * [Books of Renée Veysseyre : bibliographie - Dunod](https://www.dunod.com/livres-renee-veysseyre)
-* [http://vixra.org/author/dominique_weigel](http://vixra.org/author/dominique_weigel)
+* [http://vixra.org/author/dominique_weigel](http://vixra.org/author/dominique_weigel) and [D.Weigel in ResearchGate](https://www.researchgate.net/scientific-contributions/36164520_D_Weigel)
 * [Prof. Peter M. Boone in SPIE Proceedings 1994](http://spie.org/Publications/Proceedings/Paper/10.1117/12.201880)
+* [Prof J.Maruani in ResearchGate](https://www.researchgate.net/profile/Jean_Maruani/publication/233219177_Dependances_conformationnelles_des_couplages_hyperfins_de_noyaux_en_position_b_dans_les_radicaux_organiques/links/59fb70e3aca272347a1dc4c1/Dependances-conformationnelles-des-couplages-hyperfins-de-noyaux-en-position-b-dans-les-radicaux-organiques.pdf) and [The Dirac Electron](https://link.springer.com/chapter/10.1007/978-3-319-74582-4_19)
