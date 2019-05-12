@@ -1,15 +1,9 @@
 # Code of the Jupyter-Notebook-Practice-Physical-Constants-Ratios (2018)
-
 [![Cite rXiv](https://img.shields.io/badge/rXiv-1904.0218-orange.svg?style=flat)](https://rxiv.org/abs/1904.0218)
-
 [![Build Status](https://travis-ci.org/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios.svg?branch=master)](https://travis-ci.org/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios) 
- 
 [![codecov](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/branch/master/graph/badge.svg)](https://codecov.io/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios)
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/master?urlpath=lab/tree/doc/Jupyter-Notebook%20Practice%20Physical%20Constants%20Ratios.ipynb) Jupyter Lab Access
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/master)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/laguer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/blob/master/Jupyter-Notebook%20Practice%20Physical%20Constants%20Ratios.ipynb)
-
 [![nbviewer](https://img.shields.io/badge/view%20on-nbviewer-brightgreen.svg)](https://nbviewer.jupyter.org/github/LaGuer/Jupyter-Notebook-Practice-Physical-Constants-Ratios/blob/master/Jupyter-Notebook%20Practice%20Physical%20Constants%20Ratios.ipynb)
 
 This repository contains the Jupyter notebooks of the intriguing physical constants ratios that are at play in micro-physics and cosmology cite [*http://vixra.org/pdf/1811.0146v8.pdf*](http://vixra.org/pdf/1811.0146v8.pdf) if you use this [*Jupyter-Notebook-Practice-Physical-Constants-Ratios(2018)*](https://zenodo.org/badge/latestdoi/158677063) notebook co-authored by Dr. Christian Bizouard, Nicolas Flawisky, Prof. Michel Grosmann,  Valery Kotov, Prof. Francis Sanchez, Pr. Renee Veysseyres, Dr. Dominique Weigel, L.Gueroult & D.Gayral.
