@@ -78,7 +78,7 @@ The 'Jupyter-Notebook-Practice-Physical-Constants-Ratios' package is licensed un
 * Dr Francis Michel Sanchez
 * Denis Gayral
 
-Please, cite this paper (http://vixra.org/pdf/1811.0146v8.pdf) if you employ this package in your research work.
+Please, cite this paper [http://vixra.org/pdf/1811.0146v8.pdf](http://vixra.org/pdf/1811.0146v8.pdf) if you employ this package in your research work.
 
 ## References & Books
 
@@ -89,7 +89,8 @@ Other related publications are available from these references:
 * [Christian-Bizouard co-authored Lunar influence on equatorial atmospheric angular momentum](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2014JD022240)
 * [Nicolas Flawisky co-authored Emergence of a New Quantum Mechanics by Multivalued Logic, in The Physics of Reality: Space, Time, Matter, Cosmos : Proceedings of the 8th Symposium Honoring Mathematical Physicist Jean-Pierre Vigier, Covent Garden, London, UK, 15 -18 August 2012](https://www.worldscientific.com/doi/10.1142/9789814504782_0036)
 * [Rxiv Publications by Michel Grosmann](http://rxiv.org/author/m_grosmann)
-* [Prof. M.Grosmann in SPIE Proceedings 1978](http://spie.org/Publications/Proceedings/Volume/0136)
+* [Prof. Michel H.Grosmann 1st European Conf on Optics Applied to Metrology in SPIE Proceedings 1978](http://spie.org/Publications/Proceedings/Volume/0136)
+* [Prof. Michel H.Grosmann editor of Optics and Photonics Applied to Medicine in SPIE Proceedings 1980](https://spie.org/Publications/Proceedings/Volume/0211)
 * [http://vixra.org/author/valery_A_kotov](http://vixra.org/author/valery_a_kotov) from [CrAO](https://en.wikipedia.org/wiki/Crimean_Astrophysical_Observatory)
 * [http://rxiv.org/author/V_A_kotov](http://rxiv.org/author/v_a_kotov)
 * [Rxiv Publications by F_M_sanchez](http://rxiv.org/author/f_m_sanchez) and [Francis Sanchez in ResearchGate](https://www.researchgate.net/profile/Francis_Sanchez3)
@@ -97,5 +98,9 @@ Other related publications are available from these references:
 * [https://vixra.org/author/renee_veysseyre](https://vixra.org/author/renee_veysseyre) and [R.Veysseyre in ResearchGate](https://www.researchgate.net/scientific-contributions/35247649_R_Veysseyre)
 * [Books of Renée Veysseyre : bibliographie - Dunod](https://www.dunod.com/livres-renee-veysseyre)
 * [http://vixra.org/author/dominique_weigel](http://vixra.org/author/dominique_weigel) and [D.Weigel in ResearchGate](https://www.researchgate.net/scientific-contributions/36164520_D_Weigel)
-* [Prof. Peter M. Boone in SPIE Proceedings 1994](http://spie.org/Publications/Proceedings/Paper/10.1117/12.201880)
 * [Prof J.Maruani in ResearchGate](https://www.researchgate.net/profile/Jean_Maruani/publication/233219177_Dependances_conformationnelles_des_couplages_hyperfins_de_noyaux_en_position_b_dans_les_radicaux_organiques/links/59fb70e3aca272347a1dc4c1/Dependances-conformationnelles-des-couplages-hyperfins-de-noyaux-en-position-b-dans-les-radicaux-organiques.pdf) and [The Dirac Electron](https://link.springer.com/chapter/10.1007/978-3-319-74582-4_19)
+
+## Extra References
+
+* [Prof. Peter M. Boone in SPIE Proceedings 1994](http://spie.org/Publications/Proceedings/Paper/10.1117/12.201880)
+* [Yu. N. Denisyuk](https://spie.org/Publications/Proceedings/Paper/10.1117/12.956186)
